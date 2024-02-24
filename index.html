@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Stock Market Analysis</h1>
+    </div>
+    <div id = "container">
+        <div id = "stock-info">
+            <div id = "stock-chart">
+             <div class="chart-container">
+                <canvas id="chartCanvas" width="800" height="400"></canvas>
+                <div class="chart-tooltip" id="tooltip" style="display: none; left: 373px; top: -19px;">AAPL: $191.81</div>
+                <div class="x-axis-label" id="xAxisLabel" style="display: none; font-size: 14px; font-weight: bolder; left: 363px;">6/7/2023</div>
+             </div>
+             <div id="button">
+                <button id="btn1d">1 Month</button>
+                <button id="btn1mo">3 Month</button>
+                <button id="btn1y">1 Year</button>
+                <button id="btn5y">5 Years</button>
+            </div>
+        </div>
+            <div id="summary">
+                <div><span id="name">AAPL</span> 
+                    " &nbsp;&nbsp;&nbsp; "
+                    <span id="profit" style="color: green">0.24493%</span> 
+                    " &nbsp;&nbsp;&nbsp; "
+                    <span id="bookValue">$3.953</span>
+                </div>
+                   
+                   <p>
+                     Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide.
+                     The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, and HomePod. 
+                     It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. 
+                     In addition, the company offers various services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. 
+                     The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. 
+                     Apple Inc. was incorporated in 1977 and is headquartered in Cupertino, California.
+
+                    </p> 
+            </div>
+        </div>
+
+        <div id="stock-list">
+            <div class="list_i">
+                <button class="list" value="AAPL">AAPL</button>
+                <span>$3.953</span>
+                <span style="color:#90EE90">0.24%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="MSFT">MSFT</button>
+                <span>$26.178</span>
+                <span style="color: #90EE90">0.33%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="GOOGL">GOOGL</button>
+                <span>$20.507</span>
+                <span style="color: #90EE90">0.21%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="AMZN">AMZN</button>
+                <span>$15.064</span>
+                <span style="color: #90EE90">0.01%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="PYPL">PYPL</button>
+                <span>$17.699</span>
+                <span style="color: #90EE90">0.10%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="TSLA">TSLA</button>
+                <span>$14.129</span>
+                <span style="color: red">0.00%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="JPM">JPM</button>
+                <span>$98.108</span>
+                <span style="color: #90EE90">0.35%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="NVDA">NVDA</button>
+                <span>$9.915</span>
+                <span style="color: #90EE90">0.19%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="NFLX">NFLX</button>
+                <span>$46.654</span>
+                <span style="color: red">0.00%</span>
+            </div>
+            <div class="list_i">
+                <button class="list" value="DIS">DIS</button>
+                <span>$53.563</span>
+                <span style="color: #90EE90">0.05%</span>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
